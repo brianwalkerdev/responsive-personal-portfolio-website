@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brian Walker - Front-End Developer specializing in responsive design and CSS. View my portfolio showcasing HTML5, CSS3, JavaScript, React, and Node.js projects." />
+    <meta name="keywords" content="Brian Walker, front-end developer, web developer, responsive design, HTML, CSS, JavaScript, React, Node.js, portfolio" />
+    <meta name="author" content="Brian Walker" />
+    <meta property="og:title" content="Brian Walker - Front-End Developer Portfolio" />
+    <meta property="og:description" content="Front-End Developer specializing in responsive design and modern web technologies" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/thumbnail.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
@@ -13,12 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Mobile-first Responsive Layout</title>
+    <title>Brian Walker - Front-End Developer Portfolio | Responsive Web Design</title>
   </head>
   <body id="wrapper">
-    <header id="header">
+    <header id="header" role="banner">
       <h1 id="top" class="title">Brian Walker</h1>
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#top">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -27,25 +36,28 @@
         </ul>
       </nav>
     </header>
-    <div class="section-1">
+    <section class="section-1" aria-labelledby="intro-heading">
       <img
         src="images/responsive-layout-profile.png"
-        alt="profile picture"
+        alt="Brian Walker profile picture"
         class="profile-pic"
       />
 
-      <p class="bio">
-        Hi! I'm a front-end developer who loves responsive design and css. I
-        recently finished a degree in front-end web development at Treehouse and
-        am excited to put all my skills to use!
-      </p>
-    </div>
+      <div>
+        <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
+        <p class="bio">
+          Hi! I'm a front-end developer who loves responsive design and CSS. I
+          recently finished a degree in front-end web development at Treehouse and
+          am excited to put all my skills to use!
+        </p>
+      </div>
+    </section>
 
-    <div class="portfolio-container">
+    <section class="portfolio-container" aria-labelledby="portfolio">
       <h2 id="portfolio">Portfolio</h2>
 
       <div class="project">
-        <img src="images/portfolio-1.png" alt="portfolio picture" />
+        <img src="images/portfolio-1.png" alt="Screenshot of marketing website homepage" />
         <h3>Marketing Page</h3>
         <p class="portfolio-text">
           This project shows the front page of a marketing website meant for a
@@ -54,16 +66,16 @@
       </div>
 
       <div class="project">
-        <img src="images/portfolio-2.png" alt="portfolio picture" />
+        <img src="images/portfolio-2.png" alt="Screenshot of search interface" />
         <h3>Search Page</h3>
         <p class="portfolio-text">
-          This project searches through a pecific database to find information
+          This project searches through a specific database to find information
           that the user is trying to look up.
         </p>
       </div>
 
       <div class="project">
-        <img src="images/portfolio-3.png" alt="portfolio picture" />
+        <img src="images/portfolio-3.png" alt="Screenshot of travel comparison application" />
         <h3>Travel App</h3>
         <p class="portfolio-text">
           This project compares travel times based on different transportation
@@ -72,16 +84,16 @@
       </div>
 
       <div class="project">
-        <img src="images/portfolio-4.png" alt="portfolio picture" />
+        <img src="images/portfolio-4.png" alt="Screenshot of interactive city map" />
         <h3>Map of Favorite Spots</h3>
         <p class="portfolio-text">
-          This project uses mapping apis to plot points for my favorite spots in
+          This project uses mapping APIs to plot points for my favorite spots in
           the city for a do-it-yourself walking tour.
         </p>
       </div>
 
       <div class="project">
-        <img src="images/portfolio-5.png" alt="portfolio picture" />
+        <img src="images/portfolio-5.png" alt="Screenshot of photo gallery interface" />
         <h3>Photo Gallery</h3>
         <p class="portfolio-text">
           This project shows pictures from a recent trip to the viewer and
@@ -90,21 +102,20 @@
       </div>
 
       <div class="project">
-        <img src="images/portfolio-6.png" alt="portfolio picture" />
+        <img src="images/portfolio-6.png" alt="Screenshot of calculator application" />
         <h3>Calculator</h3>
         <p class="portfolio-text">
           Someone can enter the numbers they want, and press the big blue button
           and get the result.
         </p>
       </div>
-    </div>
-    <div style="clear: both"></div>
+    </section>
 
-    <div class="skills-container">
+    <section class="skills-container" aria-labelledby="skills">
       <h2 id="skills">Skills</h2>
 
       <p>
-        I want to master the process of building web sites and increase my
+        I want to master the process of building websites and increase my
         knowledge, skills and abilities in:
       </p>
 
@@ -115,9 +126,9 @@
         <li>React</li>
         <li>Node.js</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="contact-container">
+    <section class="contact-container" aria-labelledby="contact">
       <h2 id="contact">Contact</h2>
 
       <p>
@@ -125,24 +136,24 @@
         I've been working on, I'd love to hear from you!
       </p>
 
-      <p>Phone <strong>+1 (248) 555-7086</strong></p>
-      <p>Email <strong>bwalker206@gmail.com</strong></p>
-    </div>
+      <p>Phone: <strong>+1 (248) 555-7086</strong></p>
+      <p>Email: <strong>bwalker206@gmail.com</strong></p>
+    </section>
 
-    <footer>
+    <footer role="contentinfo">
       <span class="name alignleft"> Brian Walker </span>
 
       <span>
-        <a href="#top" class="top alignright"> Back to Top </a>
+        <a href="#top" class="top alignright" aria-label="Back to top of page"> Back to Top </a>
       </span>
-      <div class="nav-footer">
+      <nav class="nav-footer" aria-label="Footer navigation">
         <ul class="ul-footer">
           <li><a href="#top">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
     </footer>
   </body>
 </html>

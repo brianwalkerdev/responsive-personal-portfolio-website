@@ -1,3 +1,7 @@
+/* ==============================
+   Base Styles
+   ============================== */
+
 * {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -15,29 +19,18 @@ body {
   background-color: paleturquoise;
 }
 
-img {
-  max-width: 100%;
-  margin: auto;
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-li {
-  list-style: none;
-  padding-bottom: 25px;
-}
-
-ul {
-  list-style-position: inside;
-  padding-left: 0;
-}
-
-nav {
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-p {
-  padding-bottom: 15px;
-}
+/* ==============================
+   Typography
+   ============================== */
 
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -58,35 +51,66 @@ h3 {
   padding-top: 15px;
 }
 
-a {
-  text-decoration: none;
+p {
+  padding-bottom: 15px;
 }
 
-a:hover {
+/* ==============================
+   Images
+   ============================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* ==============================
+   Navigation
+   ============================== */
+
+nav {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 25px;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+/* ==============================
+   Links
+   ============================== */
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
   text-decoration: underline;
   color: orangered;
 }
 
+a:focus {
+  outline: 2px solid orangered;
+  outline-offset: 2px;
+}
+
+/* ==============================
+   Components
+   ============================== */
+
 .bio {
   color: rgb(89, 88, 88);
   font-size: large;
-}
-
-footer {
-  border-top: solid 1px rgb(89, 88, 88);
-  padding-top: 25px;
-  font-weight: 700;
-}
-
-.alignleft {
-  float: left;
-}
-.alignright {
-  float: right;
-}
-
-.nav-footer {
-  display: none;
 }
 
 .section-1 {
@@ -97,8 +121,40 @@ footer {
   padding-bottom: 35px;
 }
 
-/* Media Queries */
+/* ==============================
+   Footer
+   ============================== */
 
+footer {
+  border-top: solid 1px rgb(89, 88, 88);
+  padding-top: 25px;
+  font-weight: 700;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.nav-footer {
+  display: none;
+}
+
+/* Clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ==============================
+   Media Queries
+   ============================== */
+
+/* Tablet: 768px and up */
 @media (min-width: 768px) {
   #wrapper {
     width: 95%;
@@ -157,6 +213,7 @@ footer {
   }
 }
 
+/* Desktop: 1024px and up */
 @media (min-width: 1024px) {
   #header {
     display: flex;

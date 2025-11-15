@@ -199,9 +199,8 @@ Front-End Developer | Responsive Design Specialist
 
 ## 📊 Project Stats
 
-- **Lines of Code:** ~200 HTML, ~200 CSS
+- **Lines of Code:** Approx. 200 HTML, 200 CSS (estimated)
 - **Load Time:** < 1 second
-- **Lighthouse Score:** 95+ (Performance, Accessibility, Best Practices, SEO)
 - **Browser Support:** Chrome, Firefox, Safari, Edge (last 2 versions)
 
 ---

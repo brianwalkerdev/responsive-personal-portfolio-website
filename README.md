@@ -56,7 +56,7 @@ Already configured! Push to `main` branch and enable GitHub Pages in repository 
 ```bash
 npm run build
 ```
-Then drag the project folder to [Netlify](https://app.netlify.com/drop).
+Then drag the `dist/` folder to [Netlify](https://app.netlify.com/drop).
 
 ### Deploy to Vercel
 > **Prerequisite:** Install the Vercel CLI globally if you haven't already:

@@ -10,7 +10,7 @@ A mobile-first responsive portfolio website showcasing modern front-end developm
 
 ## 🌐 Live Demo
 
-**[View Live Site →](https://brianwalkerdev.github.io/responsive-web-page-html-css/)**
+**[View Live Site →](https://brianwalkerdev.github.io/responsive-personal-portfolio-website/)**
 
 ## ✨ Features
 
@@ -30,8 +30,8 @@ A mobile-first responsive portfolio website showcasing modern front-end developm
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/brianwalkerdev/responsive-web-page-html-css.git
-   cd responsive-web-page-html-css
+   git clone https://github.com/brianwalkerdev/responsive-personal-portfolio-website.git
+   cd responsive-personal-portfolio-website
    ```
 
 2. **Install dependencies (optional for development server):**
@@ -88,7 +88,7 @@ Front-End Developer
 
 - GitHub: [@brianwalkerdev](https://github.com/brianwalkerdev)
 - Email: bwalker206@gmail.com
-- Portfolio: [Live Demo](https://brianwalkerdev.github.io/responsive-web-page-html-css/)
+- Portfolio: [Live Demo](https://brianwalkerdev.github.io/responsive-personal-portfolio-website/)
 
 ---
 
